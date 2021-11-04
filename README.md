@@ -16,7 +16,7 @@ ARM64:
 prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 
 ARM32:
-prebuilts/gcc/linux-x86/aarch64/arm-eabi-
+prebuilts/gcc/linux-x86/aarch64/arm-eabi
 
 Set On Dt/BoardConfig.mk
 
