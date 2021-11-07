@@ -27,7 +27,7 @@ to determine which parts of a program are taking most of the execution
 time.  We assume that you know how to write, compile, and execute
 programs.  GNU 'gprof' was written by Jay Fenlason.
 
-   This manual is for 'gprof' (jsX-Custom Gnu/Binutils) version 2.37.
+   This manual is for 'gprof' (jsX-Custom Gnu/Binutils) version 2.37.50.
 
    This document is distributed under the terms of the GNU Free
 Documentation License version 1.3.  A copy of the license is included in
@@ -2426,35 +2426,35 @@ their use in free software.
 
 Tag Table:
 Node: Top719
-Node: Introduction2053
-Node: Compiling4544
-Node: Executing8600
-Node: Invoking11493
-Node: Output Options12908
-Node: Analysis Options20000
-Node: Miscellaneous Options23920
-Node: Deprecated Options25174
-Node: Symspecs27237
-Node: Output29063
-Node: Flat Profile30103
-Node: Call Graph35056
-Node: Primary38288
-Node: Callers40876
-Node: Subroutines42994
-Node: Cycles44835
-Node: Line-by-line51612
-Node: Annotated Source55688
-Node: Inaccuracy58686
-Node: Sampling Error58944
-Node: Assumptions61848
-Node: How do I?63318
-Node: Incompatibilities64875
-Node: Details66369
-Node: Implementation66762
-Node: File Format72661
-Node: Internals76953
-Node: Debugging85443
-Node: GNU Free Documentation License87033
+Node: Introduction2056
+Node: Compiling4547
+Node: Executing8603
+Node: Invoking11496
+Node: Output Options12911
+Node: Analysis Options20003
+Node: Miscellaneous Options23923
+Node: Deprecated Options25177
+Node: Symspecs27240
+Node: Output29066
+Node: Flat Profile30106
+Node: Call Graph35059
+Node: Primary38291
+Node: Callers40879
+Node: Subroutines42997
+Node: Cycles44838
+Node: Line-by-line51615
+Node: Annotated Source55691
+Node: Inaccuracy58689
+Node: Sampling Error58947
+Node: Assumptions61851
+Node: How do I?63321
+Node: Incompatibilities64878
+Node: Details66372
+Node: Implementation66765
+Node: File Format72664
+Node: Internals76956
+Node: Debugging85446
+Node: GNU Free Documentation License87036
 
 End Tag Table
 
