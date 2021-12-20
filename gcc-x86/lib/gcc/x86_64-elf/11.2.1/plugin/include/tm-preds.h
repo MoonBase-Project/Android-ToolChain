@@ -228,6 +228,7 @@ enum constraint_num
   CONSTRAINT_O,
   CONSTRAINT_m,
   CONSTRAINT_o,
+  CONSTRAINT_Bk,
   CONSTRAINT_Bm,
   CONSTRAINT_Bc,
   CONSTRAINT_Bn,
@@ -296,7 +297,7 @@ insn_extra_register_constraint (enum constraint_num c)
 static inline bool
 insn_extra_memory_constraint (enum constraint_num c)
 {
-  return c >= CONSTRAINT_m && c <= CONSTRAINT_o;
+  return c >= CONSTRAINT_m && c <= CONSTRAINT_Bk;
 }
 
 static inline bool

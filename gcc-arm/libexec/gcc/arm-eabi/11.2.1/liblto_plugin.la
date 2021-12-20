@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/javashin1986/GCC/../gcc-arm/libexec/gcc/arm-eabi/11.2.1'
+libdir='/home/jsx/GCC/build/../gcc-arm/libexec/gcc/arm-eabi/11.2.1'

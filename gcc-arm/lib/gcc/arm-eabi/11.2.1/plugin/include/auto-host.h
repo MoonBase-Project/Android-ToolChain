@@ -148,7 +148,7 @@
 
 /* Define to 1 to enable fixed-point arithmetic extension to C. */
 #ifndef USED_FOR_TARGET
-#define ENABLE_FIXED_POINT 0
+#define ENABLE_FIXED_POINT 1
 #endif
 
 
@@ -2407,7 +2407,7 @@
 
 /* Define if your target C library provides stack protector support */
 #ifndef USED_FOR_TARGET
-#define TARGET_LIBC_PROVIDES_SSP 1
+/* #undef TARGET_LIBC_PROVIDES_SSP */
 #endif
 
 

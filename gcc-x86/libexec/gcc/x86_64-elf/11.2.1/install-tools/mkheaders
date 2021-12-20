@@ -53,7 +53,7 @@ if [ x$1 != x ] ; then
   prefix=$1
   shift
 else
-  prefix=/home/javashin1986/GCC/../gcc-x86
+  prefix=/home/jsx/GCC/build/../gcc-x86
 fi
 
 # Allow for alternate isysroot in which to find headers
