@@ -1048,7 +1048,7 @@
 /* Define to 1 if we found a declaration for 'mallinfo2', otherwise define to
    0. */
 #ifndef USED_FOR_TARGET
-#define HAVE_DECL_MALLINFO2 0
+#define HAVE_DECL_MALLINFO2 1
 #endif
 
 
@@ -1439,6 +1439,72 @@
 #endif
 
 
+/* Define if your assembler has fixed global_load functions. */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_GCN_ASM_GLOBAL_LOAD_FIXED */
+#endif
+
+
+/* Define if your assembler expects amdgcn_target gfx908+xnack syntax. */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_GCN_ASM_V3_SYNTAX */
+#endif
+
+
+/* Define if your assembler expects amdgcn_target gfx908:xnack+ syntax. */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_GCN_ASM_V4_SYNTAX */
+#endif
+
+
+/* Define if your assembler allows -mattr=+sramecc for fiji. */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_GCN_SRAM_ECC_FIJI */
+#endif
+
+
+/* Define if your assembler allows -mattr=+sramecc for gfx900. */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_GCN_SRAM_ECC_GFX900 */
+#endif
+
+
+/* Define if your assembler allows -mattr=+sramecc for gfx906. */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_GCN_SRAM_ECC_GFX906 */
+#endif
+
+
+/* Define if your assembler allows -mattr=+sramecc for gfx908. */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_GCN_SRAM_ECC_GFX908 */
+#endif
+
+
+/* Define if your assembler allows -mattr=+xnack for fiji. */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_GCN_XNACK_FIJI */
+#endif
+
+
+/* Define if your assembler allows -mattr=+xnack for gfx900. */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_GCN_XNACK_GFX900 */
+#endif
+
+
+/* Define if your assembler allows -mattr=+xnack for gfx906. */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_GCN_XNACK_GFX906 */
+#endif
+
+
+/* Define if your assembler allows -mattr=+xnack for gfx908. */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_GCN_XNACK_GFX908 */
+#endif
+
+
 /* Define to 1 if you have the `getchar_unlocked' function. */
 #ifndef USED_FOR_TARGET
 #define HAVE_GETCHAR_UNLOCKED 1
@@ -1760,7 +1826,7 @@
 
 /* Define to 1 if you have the `mallinfo2' function. */
 #ifndef USED_FOR_TARGET
-/* #undef HAVE_MALLINFO2 */
+#define HAVE_MALLINFO2 1
 #endif
 
 
@@ -2341,7 +2407,7 @@
 
 /* Define if your target C library provides stack protector support */
 #ifndef USED_FOR_TARGET
-#define TARGET_LIBC_PROVIDES_SSP 1
+/* #undef TARGET_LIBC_PROVIDES_SSP */
 #endif
 
 
