@@ -77,7 +77,7 @@ build_binutils() {
     --enable-default-hash-style=gnu \
     --enable-obsolete \
     --disable-shared \
-    --enable-threads \
+    --enable-threads=posix \
     --enable-relro \
     --enable-install-libiberty \
     --enable-textrel-check=warning \
@@ -117,6 +117,7 @@ clear
     --disable-libstdcxx-pch \
     --disable-nls \
     --disable-shared \
+    --enable-threads=posix \
     --disable-docs \
     --with-zstd \
     --enable-lto \
