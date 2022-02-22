@@ -1391,7 +1391,7 @@ Returns the maximum page size in bytes for ELF, 0 otherwise.
 ......................................
 
 *Synopsis*
-     bfd_vma bfd_emul_get_commonpagesize (const char *, bool);
+     bfd_vma bfd_emul_get_commonpagesize (const char *);
    *Description*
 Returns the common page size, in bytes, as determined by emulation.
 
@@ -2142,9 +2142,14 @@ Here is the section structure:
          struct bfd_section *s;
          const char *linked_to_symbol_name;
        } map_head, map_tail;
-      /* Points to the output section this section is already assigned to, if any.
-         This is used when support for non-contiguous memory regions is enabled.  */
-      struct bfd_section *already_assigned;
+
+       /* Points to the output section this section is already assigned to,
+          if any.  This is used when support for non-contiguous memory
+          regions is enabled.  */
+       struct bfd_section *already_assigned;
+
+       /* Explicitly specified section type, if non-zero.  */
+       unsigned int type;
 
      } asection;
 
@@ -2328,8 +2333,8 @@ Here is the section structure:
        /* symbol,                    symbol_ptr_ptr,                     */ \
           (struct bfd_symbol *) SYM, &SEC.symbol,                           \
                                                                             \
-       /* map_head, map_tail, already_assigned                           */ \
-          { NULL }, { NULL }, NULL                                          \
+       /* map_head, map_tail, already_assigned, type                     */ \
+          { NULL }, { NULL }, NULL,             0                           \
                                                                             \
          }
 
@@ -14679,60 +14684,60 @@ Node: BFD front end13128
 Node: typedef bfd13552
 Node: Error reporting31599
 Node: Miscellaneous36850
-Node: Memory Usage55761
-Node: Initialization56992
-Node: Sections57668
-Node: Section Input58151
-Node: Section Output59345
-Node: typedef asection61832
-Node: section prototypes86680
-Node: Symbols97354
-Node: Reading Symbols98957
-Node: Writing Symbols100065
-Node: Mini Symbols101809
-Node: typedef asymbol102783
-Node: symbol handling functions108990
-Node: Archives114323
-Node: Formats118453
-Node: Relocations121383
-Node: typedef arelent122110
-Node: howto manager137021
-Node: Core Files272538
-Node: Targets274562
-Node: bfd_target276537
-Node: Architectures303298
-Node: Opening and Closing335149
-Node: Internal353317
-Node: File Caching353421
-Node: Linker Functions355318
-Node: Creating a Linker Hash Table356992
-Node: Adding Symbols to the Hash Table358731
-Node: Differing file formats359631
-Node: Adding symbols from an object file361356
-Node: Adding symbols from an archive363506
-Node: Performing the Final Link365852
-Node: Information provided by the linker367093
-Node: Relocating the section contents368247
-Node: Writing the symbol table369999
-Node: Hash Tables377090
-Node: Creating and Freeing a Hash Table378288
-Node: Looking Up or Entering a String379538
-Node: Traversing a Hash Table380791
-Node: Deriving a New Hash Table Type381580
-Node: Define the Derived Structures382646
-Node: Write the Derived Creation Routine383727
-Node: Write Other Derived Routines386352
-Node: BFD back ends387667
-Node: What to Put Where387937
-Node: aout388117
-Node: coff394371
-Node: elf422511
-Node: mmo422912
-Node: File layout423782
-Node: Symbol-table429695
-Node: mmo section mapping433458
-Node: GNU Free Documentation License437112
-Node: BFD Index462176
+Node: Memory Usage55755
+Node: Initialization56986
+Node: Sections57662
+Node: Section Input58145
+Node: Section Output59339
+Node: typedef asection61826
+Node: section prototypes86778
+Node: Symbols97452
+Node: Reading Symbols99055
+Node: Writing Symbols100163
+Node: Mini Symbols101907
+Node: typedef asymbol102881
+Node: symbol handling functions109088
+Node: Archives114421
+Node: Formats118551
+Node: Relocations121481
+Node: typedef arelent122208
+Node: howto manager137119
+Node: Core Files272636
+Node: Targets274660
+Node: bfd_target276635
+Node: Architectures303396
+Node: Opening and Closing335247
+Node: Internal353415
+Node: File Caching353519
+Node: Linker Functions355416
+Node: Creating a Linker Hash Table357090
+Node: Adding Symbols to the Hash Table358829
+Node: Differing file formats359729
+Node: Adding symbols from an object file361454
+Node: Adding symbols from an archive363604
+Node: Performing the Final Link365950
+Node: Information provided by the linker367191
+Node: Relocating the section contents368345
+Node: Writing the symbol table370097
+Node: Hash Tables377188
+Node: Creating and Freeing a Hash Table378386
+Node: Looking Up or Entering a String379636
+Node: Traversing a Hash Table380889
+Node: Deriving a New Hash Table Type381678
+Node: Define the Derived Structures382744
+Node: Write the Derived Creation Routine383825
+Node: Write Other Derived Routines386450
+Node: BFD back ends387765
+Node: What to Put Where388035
+Node: aout388215
+Node: coff394469
+Node: elf422609
+Node: mmo423010
+Node: File layout423880
+Node: Symbol-table429793
+Node: mmo section mapping433556
+Node: GNU Free Documentation License437210
+Node: BFD Index462274
 
 End Tag Table
 
